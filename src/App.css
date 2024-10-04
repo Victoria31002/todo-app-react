@@ -1,0 +1,160 @@
+#root {
+  --color-light: #f7f7f7;
+  --color-dark: #252525;
+  --primary-color: #6c63ff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url(./fonts/Kanit-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url(./fonts/Kanit-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontName";
+  src: url("FileName.eot");
+
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Kanit", serif;
+}
+
+.container {
+  margin: 0 325px 50px 325px;
+}
+
+.todoMain {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.searchNote .MuiOutlinedInput-root {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.searchNote .MuiInputLabel-root {
+  color: var(--primary-color);
+}
+
+.btnAdd {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  position: fixed !important;
+  bottom: 150px !important;
+  right: 350px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 24px !important;
+  background-color: var(--primary-color) !important;
+}
+
+.btnTheme {
+  padding: 0 !important;
+  min-width: 0;
+  width: auto;
+  background-color: var(--primary-color) !important;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.noteContent {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.noteText {
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+.btnNote {
+  display: flex;
+  gap: 10px;
+}
+
+.noteBorder {
+  border-bottom: 2px solid var(--primary-color);
+  margin-top: 10px;
+  padding: 0;
+}
+
+.checkboxNote {
+  border-color: var(--primary-color);
+}
+
+.themeIcon {
+  padding: 8px;
+}
+
+.noteList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
